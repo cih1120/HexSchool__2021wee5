@@ -1,0 +1,150 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="row d-flex flex-nowrap justify-content-between mb-5">
+  <div class="d-flex align-items-center col">
+    <h4 class="text-bold me-5">Assignment</h4>
+    <select name="Courses" class="select">
+      <option value="All Courses">All Courses</option>
+    </select>
+  </div>
+  <div class="d-flex align-items-center col-auto">
+    <a href="#" class="text-dark me-4"><i class="fas fa-search"></i></a>
+    <a href="#" class="text-dark"><i class="fas fa-bell"></i></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-5 ">
+    <select class="mb-1 select" name="ChapterAssignment" id="">
+      <option value="ChapterAssignment">ChapterAssignment</option>
+      <option value="ChapterAssignment">ChapterAssignment</option>
+    </select>
+    <!-- ListGroup -->
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+        <div>
+          <p class="text-dark">Chapter Assignment 2</p>
+          <h6 class="fw-bold">Please check this file…</h6>
+        </div>
+        <div>
+          <p class="t-dark">4 hrs ago</p>
+          <p class="t-muted">Emily Wang</p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div>
+          <p class="text-dark">Chapter Assignment</p>
+          <h6 class="fw-bold">My Homework</h6>
+        </div>
+        <div>
+          <p class="t-dark">12 hrs ago</p>
+          <p class="t-muted">David Xu</p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div>
+          <p class="text-dark mb-1">Final Assignment</p>
+          <h6 class="fw-bold">Have a problem with this…</h6>
+        </div>
+        <div>
+          <p class="t-dark">18 hrs ago</p>
+          <p class="t-muted">Tony Wei</p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div>
+          <p class="text-dark">Final Assignment</p>
+          <h6 class="fw-bold">Did I do it right?</h6>
+        </div>
+        <div>
+          <p class="t-dark mb-1">18 hrs ago</p>
+          <p class="t-muted">Tony Wei</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-7">
+    <div class="list-group">
+      <!-- 右方標題 -->
+      <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+        <div>
+          <span class="text-dark mb-1">Chapter Assignment 2 / HTML&CSS</span>
+          <h6 class="fw-bold">Please check this file for me, thanks!</h6>
+        </div>
+        <div>
+          <i class="fas fa-comment-dots"></i>
+        </div>
+      </a>
+      <!-- 右方內容 -->
+      <div class="list-group-item list-group-item-action px-3">
+        <ul class="AssignmentContent w-100 list-unstyled">
+          <li class="py-3">
+            <div class="d-flex justify-content-between">
+              <div class="nameBox mt-auto px-3">
+                <div class="nameBox__img me-2">
+                  <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" alt="andychen" class="img-fluid" />
+                </div>
+                <div>
+                  <h6 class="fw-bold m-0">Emily Wang</h6>
+                  <p class="text-black-50">10:38 AM (4 hours ago)</p>
+                </div>
+              </div>
+            </div>
+            <div class="AssignmentContent__content mt-3">
+              <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="codeText">div</span> is bigger than the height of the <span class="codeText">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+              <a  class="h6 codeFile mt-3 cursor-pointer">
+                <i class="fas fa-link"></i>
+                HW-2-David.zip
+              </a>
+            </div>      
+          </li>
+          <li class="py-3">
+            <div class="d-flex justify-content-between">
+              <div class="nameBox mt-auto px-3">
+                <div class="nameBox__img me-2">
+                  <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="andychen" class="img-fluid" />
+                </div>
+                <div>
+                  <h6 class="fw-bold m-0">Andy Chen (You)</h6>
+                  <p class="text-black-50">13:24 AM (1 hours ago)</p>
+                </div>
+              </div>
+              <div>
+                <i class="far fa-star me-4"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="AssignmentContent__content mt-3">
+              <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                <br><br>You can:
+                <br><br>
+                <ul class="AssignmentContent__content_list list-unstyled">
+                  <li>• adjust the <span class="codeText">vertical-align</span>> of the image to position it elsewhere (e.g. the <span class="codeText">middle</span> ) or</li>
+                  <li>• change the <span class="codeText">display</span> so it isn’t inline.</p></li>
+                </ul>
+            </div>      
+          </li>
+        </ul>
+      </div>
+      <!-- 右方內容下方列 -->
+      <div class="mt-3 d-flex flex-row justify-content-between">
+        <ul class="d-flex list-unstyled">
+          <li><a href="#" class="pageArrow pageArrow--left"></a></li>
+          <li><a href="#" class="pageArrow pageArrow--right"></a></li>
+        </ul>
+        <ul class="d-flex list-unstyled">
+          <li class="me-2">
+            <a href="#" class="btn btn-outline-primary">Mark as read</a>
+          </li>
+          <li>
+            <a href="#"class="btn btn-primary">Reply</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

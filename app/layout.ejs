@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <section class="container-fluid">
+      <div class="row">
+        <aside
+          class="bg-light col-2 d-flex flex-column justify-content-start vh-100 px-0 py-3 position-fixed"
+        >
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg"
+            class=" mb-4 px-3 w-75"
+            alt="ANSWER"
+          />
+          <ul class="asideList w-100 list-unstyled">
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fab fa-angellist"></i>Dashboard </a>
+            </li>
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fas fa-address-book"></i>Question </a>
+            </li>
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fas fa-broom"></i>Assignment </a>
+            </li>
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fas fa-frog"></i>Course </a>
+            </li>
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fas fa-rainbow"></i>Admin </a>
+            </li>
+            <li class="asideList__item">
+              <a href="#" class="h6"><i class="fas fa-seedling"></i>Settings </a>
+            </li>
+          </ul>
+          <div class="nameBox mt-auto px-3">
+            <div class="nameBox__img me-2">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="andychen" class="img-fluid" />
+            </div>
+            <div>
+              <h6 class="fw-bold m-0">Andy Chen</h6>
+              <p class="text-black-50">andy0401@mail.com</p>
+            </div>
+          </div>
+        </aside>
+        <main class="col-10 offset-2">
+          <div class="container-fluid">
+            <div class="row">
+              <%- contents %>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

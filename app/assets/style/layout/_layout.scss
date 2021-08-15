@@ -1,0 +1,22 @@
+.asideList {
+  &__item {
+    padding: 0.5rem 2rem;
+    border-left: 4px solid transparent;
+    margin-bottom: 1rem;
+    i {
+      margin-right: 19px;
+    }
+    a {
+      color: $gray-900;
+    }
+    &:hover {
+      a {
+        color: $primary;
+      }
+      border-left: 4px solid $primary;
+    }
+  }
+}
+main {
+  padding: 32px;
+}
